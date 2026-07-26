@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="iconGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A843;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C8963E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8862D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="iconDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3D4F28;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2B3A1E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#FDF8F0" />
+  <circle cx="32" cy="32" r="30" fill="none" stroke="url(#iconGold)" stroke-width="1.5" />
+
+  <!-- Inner gold glow -->
+  <circle cx="32" cy="32" r="22" fill="url(#iconGold)" opacity="0.08" />
+
+  <!-- Simplified cypress tree -->
+  <g transform="translate(32, 36)">
+    <!-- Trunk -->
+    <rect x="-2.5" y="0" width="5" height="10" rx="1" fill="#5A4A3A" />
+    <!-- Tree layers -->
+    <path d="M-18,3 Q-14,-7 -6,-16 Q-3,-19 0,-21 Q3,-19 6,-16 Q14,-7 18,3 Z" fill="url(#iconDark)" />
+    <path d="M-14,-2 Q-11,-10 -5,-18 Q-2,-21 0,-22 Q2,-21 5,-18 Q11,-10 14,-2 Z" fill="#3D4F28" />
+    <path d="M-10,-8 Q-7,-18 -3,-24 L0,-27 L3,-24 Q7,-18 10,-8 Z" fill="#2B3A1E" />
+  </g>
+
+  <!-- Tiny sun arc top-right -->
+  <circle cx="44" cy="18" r="7" fill="url(#iconGold)" opacity="0.3" />
+  <circle cx="44" cy="18" r="5" fill="#D4A843" opacity="0.15" />
+</svg>

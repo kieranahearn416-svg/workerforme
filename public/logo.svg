@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap');
+    </style>
+    <linearGradient id="sunGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4A843;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C8963E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8862D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="treeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5A6B3A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3D4F28;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B8862D;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#D4A843;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A07628;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sun circle background -->
+  <circle cx="120" cy="120" r="72" fill="url(#sunGold)" opacity="0.15" />
+  <circle cx="120" cy="120" r="65" fill="none" stroke="url(#sunGold)" stroke-width="1.5" opacity="0.5" />
+  <circle cx="120" cy="120" r="72" fill="none" stroke="url(#sunGold)" stroke-width="0.5" opacity="0.3" />
+
+  <!-- Sun rays (subtle) -->
+  <g opacity="0.2" stroke="#D4A843" stroke-width="0.8">
+    <line x1="120" y1="48" x2="120" y2="38" />
+    <line x1="120" y1="192" x2="120" y2="202" />
+    <line x1="48" y1="120" x2="38" y2="120" />
+    <line x1="192" y1="120" x2="202" y2="120" />
+    <line x1="69" y1="69" x2="62" y2="62" />
+    <line x1="171" y1="69" x2="178" y2="62" />
+    <line x1="69" y1="171" x2="62" y2="178" />
+    <line x1="171" y1="171" x2="178" y2="178" />
+  </g>
+
+  <!-- Cypress tree silhouette -->
+  <g transform="translate(120, 128)">
+    <!-- Trunk -->
+    <rect x="-4" y="0" width="8" height="28" rx="2" fill="#5A4A3A" />
+    <!-- Tree body layers (bottom to top) -->
+    <path d="M-36,8 Q-28,-12 -12,-28 Q-6,-34 0,-38 Q6,-34 12,-28 Q28,-12 36,8 Z" fill="url(#treeGrad)" opacity="0.85" />
+    <path d="M-30,0 Q-22,-18 -10,-32 Q-5,-37 0,-40 Q5,-37 10,-32 Q22,-18 30,0 Z" fill="url(#treeGrad)" opacity="0.9" />
+    <path d="M-24,-8 Q-18,-24 -8,-36 Q-4,-40 0,-42 Q4,-40 8,-36 Q18,-24 24,-8 Z" fill="#5A6B3A" />
+    <path d="M-18,-16 Q-13,-30 -6,-40 Q-3,-44 0,-46 Q3,-44 6,-40 Q13,-30 18,-16 Z" fill="#5A6B3A" opacity="0.95" />
+    <!-- Top point -->
+    <path d="M-10,-24 Q-6,-40 -3,-50 L0,-54 L3,-50 Q6,-40 10,-24 Z" fill="#4A5B2E" />
+  </g>
+
+  <!-- Lavender sprig (small accent left of tree base) -->
+  <g transform="translate(188, 148)" opacity="0.6">
+    <line x1="0" y1="0" x2="0" y2="-24" stroke="#5A6B3A" stroke-width="1.5" />
+    <circle cx="-3" cy="-12" r="3" fill="#8B6BAE" />
+    <circle cx="3" cy="-8" r="2.5" fill="#9B7BC0" />
+    <circle cx="-2" cy="-4" r="2" fill="#8B6BAE" />
+    <circle cx="2" cy="-18" r="2.5" fill="#9B7BC0" />
+    <circle cx="-2.5" cy="-22" r="2" fill="#8B6BAE" />
+  </g>
+
+  <!-- Wordmark: VILLAGE DORÉ -->
+  <text x="250" y="118" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="52" font-weight="600" letter-spacing="8" fill="url(#textGold)">
+    VILLAGE DORÉ
+  </text>
+
+  <!-- Decorative line -->
+  <line x1="185" y1="136" x2="315" y2="136" stroke="#D4A843" stroke-width="0.8" opacity="0.6" />
+
+  <!-- Tagline: PROVENCE -->
+  <text x="250" y="160" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" letter-spacing="10" fill="#8B7355">
+    PROVENCE
+  </text>
+
+  <!-- Small decorative dots flanking PROVENCE -->
+  <circle cx="200" cy="156" r="2" fill="#D4A843" opacity="0.5" />
+  <circle cx="300" cy="156" r="2" fill="#D4A843" opacity="0.5" />
+</svg>
